@@ -1,0 +1,179 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  background-color: rgb(3,0,31 );
+  color: white;
+  font-family:Poppins;
+}
+.App{
+  min-height: 100vh;
+  display: flex;
+}
+.sidebar{
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+}
+.main{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  margin-right: 1rem;
+}
+.brand{
+  font-size: 1.5rem;
+}
+.upperSide{
+ height: 70%;
+ padding: 10px;
+ width: 100%;
+ border-right: 0.5px solid rgb(100, 88, 88);
+ border-bottom: 0.5px solid rgb(100, 88, 88);
+
+
+}
+.upperSideTop{
+  display: flex;
+  align-items: center;
+}
+.lowerSide{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 0.5px solid rgb(100, 88, 88);
+ /* border-bottom: 0.5px solid rgb(100, 88, 88); */
+
+}
+.listItems{
+  margin-top: 5px;
+  margin-left: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.upperSideBottom{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 10px;
+  gap: 10px;
+}
+.query{
+min-width: 180px;
+background-color: transparent;
+border: none;
+color: white;
+display: flex;
+align-items: center;
+gap: 5px;
+font-family:Poppins; 
+}
+.midBtn{
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  
+}
+.midBtn img{
+  height: 30px;
+}
+.main{
+  min-height:calc(100vh-14rem) ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem 10rem;
+}
+.chats {
+  width: 100%;
+  max-width: 70rem;
+  font-size: 14px;
+  height: 70vh;
+  overflow-y: scroll;
+  /* overflow: hidden; */
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 500px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 90, 90);
+  /* background: transparent; */
+}
+
+::-webkit-scrollbar-track {
+  /* background: rgba(0, 0, 0, 0.2); */
+  /* background: transparent; */
+
+}
+.chat{
+  margin: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  text-align: justify;
+}
+.chatImg{
+  object-fit: cover;
+  width: 3.5rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+}
+.bot{
+  background: rgba(28, 30, 58, 1);
+  width: fit-content;
+  border-radius: 0.5rem;
+}
+.chatFooter{
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.chatFooter p{
+  margin: 2rem 0;
+}
+.inp{
+  padding: 0.5rem;
+  background: rgba(27, 30, 58, 1);
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 68rem;
+}
+.inp>input{
+  width: calc(100%-3rem);
+  outline: none;
+  padding: 1.25rem;
+  color: wheat;
+  width: 100%;
+}
+.inp>input, .send{
+  background: transparent;
+  border: none;
+  /* height: 100%; */
+}
+.inp>input, .send img{
+  float: left;
+  display: flex;
+  /* align-items: center; */
+}
